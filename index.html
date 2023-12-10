@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>DesiAtlas</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>DesiAtlas 🌐</h1>
+          <i>DesiAtlas</i>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns four sidebar-one" id="sidebar-one">
+          <h4>Add States</h4>
+          <input
+            type="text"
+            id="state-Name"
+            class="u-full-width"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            id="state-image"
+            class="u-full-width"
+            placeholder="image"
+          />
+          <input
+            type="number"
+            id="state-population"
+            class="u-full-width"
+            placeholder="population"
+          />
+          <input
+            type="number"
+            id="state-GDPRanking"
+            class="u-full-width"
+            placeholder="GDP Ranking"
+          />
+          <input
+            type="text"
+            id="state-language"
+            class="u-full-width"
+            placeholder="language"
+          />
+          <input
+            type="text"
+            id="state-capital"
+            class="u-full-width"
+            placeholder="capital"
+          />
+          <input
+            type="text"
+            id="state-region"
+            class="u-full-width"
+            placeholder="region"
+          />
+
+          <input
+            type="text"
+            id="state-tourismPlaces"
+            class="u-full-width"
+            placeholder="tourism Places"
+          />
+          <button id="add-state" class="u-full-width button button-primary">
+            Add States
+          </button>
+          <hr />
+
+          <h4>update all fields of States</h4>
+          <input
+            type="text"
+            id="update-state-id"
+            class="u-full-width"
+            placeholder="ID"
+          />
+          <input
+            type="text"
+            id="update-state-Name"
+            class="u-full-width"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            id="update-state-image"
+            class="u-full-width"
+            placeholder="image"
+          />
+          <input
+            type="number"
+            id="update-state-population"
+            class="u-full-width"
+            placeholder="population"
+          />
+          <input
+            type="number"
+            id="update-state-GDPRanking"
+            class="u-full-width"
+            placeholder="GDP Ranking"
+          />
+          <input
+            type="text"
+            id="update-state-language"
+            class="u-full-width"
+            placeholder="language"
+          />
+          <input
+            type="text"
+            id="update-state-capital"
+            class="u-full-width"
+            placeholder="capital"
+          />
+          <input
+            type="text"
+            id="update-state-region"
+            class="u-full-width"
+            placeholder="region"
+          />
+          <input
+            type="text"
+            id="update-state-tourismPlaces"
+            class="u-full-width"
+            placeholder="tourismPlaces"
+          />
+          <button id="update-state" class="u-full-width button button-primary">
+            Update all fields
+          </button>
+          <hr />
+
+          <h4>update only GDP Ranking</h4>
+          <input
+            type="text"
+            id="update-GDP-state-id"
+            class="u-full-width"
+            placeholder="ID"
+          />
+          <input
+            type="number"
+            id="update-GDP-state-GDPRanking"
+            class="u-full-width"
+            placeholder="GDP Ranking"
+          />
+          <button
+            id="update-GDP-stateBtn"
+            class="u-full-width button button-primary"
+          >
+            Update state GDP Ranking
+          </button>
+          <hr />
+
+          <h4>Sort Based On GDP</h4>
+          <button
+            id="sort-low-to-high"
+            class="u-full-width button button-primary"
+          >
+            Sort Low To High
+          </button>
+          <button
+            id="sort-high-to-low"
+            class="u-full-width button button-primary"
+          >
+            Sort High To Low
+          </button>
+          <hr />
+
+          <h4>Filter Based On region</h4>
+          <button id="filter-North-East-India" class="u-full-width button button-primary">
+            North East India
+          </button>
+          <button
+            id="filter-West-India"
+            class="u-full-width button button-primary"
+          >
+          West India
+          </button>
+          <button
+            id="filter-North-India"
+            class="u-full-width button button-primary"
+          >
+          North India
+          </button>
+        </div>
+
+        <div class="columns eight main">
+          <div class="search-states-wrapper" id="search-states-wrapper">
+            <select id="search-by-select">
+              <option value="">Search By</option>
+              <option value="stateName">stateName</option>
+              <option value="language">language</option>
+            </select>
+            <input
+              type="text"
+              id="search-by-input"
+              placeholder="Enter stateName/language here"
+            />
+            <button
+              id="search-by-button"
+              style="background-color: #33c3f0; color: white; border: none"
+            >
+              Search
+            </button>
+          </div>
+          <div class="data-list-wrapper" id="data-list-wrapper">
+            <!-- append card-list that includes card here -->
+          </div>
+          <div class="pagination-wrapper" id="pagination-wrapper">
+            <!-- append the pagination button here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>
